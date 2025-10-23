@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ministerio Jóvenes con Visión - Una iglesia para toda la familia en Los Angeles, Inland Empire y Las Vegas">
+    <meta name="keywords" content="iglesia, church, Los Angeles, Las Vegas, Inland Empire, ministerio, jóvenes">
+    <title>MJV Church - Ministerio Jóvenes con Visión</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">MJV Church</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="#nosotros" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
+                <li><a href="#campus" data-es="Campus" data-en="Campus">Campus</a></li>
+                <li><a href="#conexion" data-es="Conexión" data-en="Connect">Conexión</a></li>
+                <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">EN / ES</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 data-es="Nuestra Visión" data-en="Our Vision">Nuestra Visión</h1>
+            <p data-es="Somos una familia alegre, llena del amor y la presencia de Dios, avivados por Jesús para transformar vidas y discipular naciones." 
+            data-en="We are a joyful family full of the love and the presence of God, revived by Jesus to transform lives and disciple nations.">Somos una familia alegre, llena del amor y la presencia de Dios, avivados por Jesús para transformar vidas y discipular naciones.</p>
+        </div>
+    </section>
+
+    <main>
+
+        <section id="nosotros">
+            <h2 class="section-title" data-es="Conócenos" data-en="About Us">Conócenos</h2>
+            <div class="about-grid">
+                <article class="pastor-card">
+                    <img src="images/lead-pastors.jpg" alt="Lead Pastors" class="pastor-image">
+                    <div class="pastor-info">
+                        <h3 data-es="Pastores Generales — Mario & Nongkee" data-en="Lead Pastors — Mario & Nongkee">Pastores Generales — Mario & Nongkee</h3>
+                        <p data-es="Pastores Mario & Nongkee Gamboa dirigen con sabiduría y visión el ministerio, impulsando la restauración de las familias y la formación de generaciones firmes en la fe. Su liderazgo refleja un compromiso constante con la expansión del Reino de Dios y el fortalecimiento de la vida familiar conforme a los principios bíblicos." 
+                        data-en="Pastors Mario & Nongkee Gamboa lead the ministry with wisdom and vision, promoting the restoration of families and the formation of faith-strong generations. Their leadership reflects a steadfast commitment to the expansion of God’s Kingdom and the strengthening of family life according to biblical principles.">Pastores Mario & Nongkee Gamboa dirigen con sabiduría y visión el ministerio, impulsando la restauración de las familias y la formación de generaciones firmes en la fe. Su liderazgo refleja un compromiso constante con la expansión del Reino de Dios y el fortalecimiento de la vida familiar conforme a los principios bíblicos.</p>
+                    </div>
+                </article>
+
+                <article class="pastor-card">
+                    <img src="images/campus-pastors.jpg" alt="Campus Pastors" class="pastor-image">
+                    <div class="pastor-info">
+                        <h3 data-es="Pastores de Campus — Jesh & Susy" data-en="Campus Pastors — Jesh & Susy">Pastores de Campus — Jesh & Susy</h3>
+                        <p data-es="Pastores Jesh & Susy sirven con dedicación al cuidado pastoral y al desarrollo espiritual de la congregación local. Su labor se centra en edificar familias sólidas, fomentar la unidad en la iglesia y promover una fe viva que impacte la comunidad." 
+                        data-en="Pastors Jesh & Susy faithfully serve in pastoral care and the spiritual development of the local congregation. Their ministry focuses on building strong families, fostering unity within the church, and inspiring a living faith that impacts the community.">Pastores Jesh & Susy sirven con dedicación al cuidado pastoral y al desarrollo espiritual de la congregación local. Su labor se centra en edificar familias sólidas, fomentar la unidad en la iglesia y promover una fe viva que impacte la comunidad.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="campus-section" id="campus">
+            <h2 class="section-title" data-es="Nuestros Campus" data-en="Our Campuses">Nuestros Campus</h2>
+            <div class="campus-grid">
+                <article class="campus-card">
+                    <img src="images/campus-la.jpg" alt="MJV Los Angeles Campus" class="campus-image">
+                    <div class="campus-info">
+                        <h3>MJV Los Angeles</h3>
+                        <p><strong data-es="Dirección:" data-en="Address:">Dirección:</strong> 3812 S San Pedro St., Los Angeles CA 90011</p>
+                        <p><strong data-es="Horarios:" data-en="Service Times:">Horarios:</strong> <span data-es="Domingos 11:00 AM" data-en="Sundays 11:00 AM">Domingos 11:00 AM</span></p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/mjvlosangeles" target="_blank">
+                               <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                            <a href="https://www.instagram.com/mjvlosangeles/" target="_blank">
+                               <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="campus-card">
+                    <img src="images/campus-ie.jpg" alt="MJV Inland Empire Campus" class="campus-image">
+                    <div class="campus-info">
+                        <h3>MJV Inland Empire</h3>
+                        <p><strong data-es="Dirección:" data-en="Address:">Dirección:</strong> 6979 Palm Ave. Highland CA 92346</p>
+                        <p><strong data-es="Horarios:" data-en="Service Times:">Horarios:</strong> <span data-es="Domingos 11:00 AM" data-en="Sundays 11:00">Domingos 11:00 AM</span></p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/mjvinland" target="_blank">
+                                <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                            <a href="https://www.instagram.com/mjvinland/" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="campus-card">
+                    <img src="images/campus-lv.jpg" alt="MJV Las Vegas Campus" class="campus-image">
+                    <div class="campus-info">
+                        <h3>MJV Las Vegas</h3>
+                        <p><strong data-es="Dirección:" data-en="Address:">Dirección:</strong> 3742 E Tropicana Ave. Las Vegas NV 89121</p>
+                        <p><strong data-es="Horarios:" data-en="Service Times:">Horarios:</strong> <span data-es="Domingos 11:00 AM" data-en="Sundays 11:00 AM">Domingos 11:00 AM</span></p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/mjvlasvegas" target="_blank">
+                                <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                            <a href="https://www.instagram.com/mjvlasvegas/" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2 class="section-title" data-es="Bienvenido a Casa" data-en="Welcome Home">Bienvenido a Casa / Welcome Home</h2>
+            <div class="video-container">
+                <!-- Replace VIDEO_ID with your actual YouTube video ID -->
+                <iframe src="https://www.youtube.com/embed/Z2yW6kOdAOc" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="connection-section" id="conexion">
+            <h2 class="section-title" data-es="Conéctate" data-en="Get Connected">Conéctate</h2>
+            <div class="connection-grid">
+                <article class="connection-card">
+                    <div class="connection-icon">👥</div>
+                    <h3 data-es="Únete a un Grupo" data-en="Join a Group">Únete a un Grupo</h3>
+                    <p data-es="Conecta con otros creyentes en grupos pequeños" data-en="Connect with other believers in small groups">Conecta con otros creyentes en grupos pequeños</p>
+                    <a href="#" class="cta-button" data-es="Unirme" data-en="Join Now">Unirme</a>
+                </article>
+
+                <article class="connection-card">
+                    <div class="connection-icon">🙏</div>
+                    <h3 data-es="Pide Oración" data-en="Request Prayer">Pide Oración</h3>
+                    <p data-es="Comparte tus necesidades de oración con nosotros" data-en="Share your prayer needs with us">Comparte tus necesidades de oración con nosotros</p>
+                    <a href="#contacto" class="cta-button" data-es="Pedir Oración" data-en="Request Prayer">Pedir Oración</a>
+                </article>
+
+                <article class="connection-card">
+                    <div class="connection-icon">💝</div>
+                    <h3 data-es="Donar" data-en="Give">Donar</h3>
+                    <p data-es="Apoya el ministerio y la obra de Dios" data-en="Support the ministry and God's work">Apoya el ministerio y la obra de Dios</p>
+                    <a href="#" class="cta-button" data-es="Donar Ahora" data-en="Give Now">Donar Ahora</a>
+                </article>
+
+                <article class="connection-card">
+                    <div class="connection-icon">🚀</div>
+                    <h3 data-es="Próximos Pasos" data-en="Next Steps">Próximos Pasos</h3>
+                    <p data-es="Descubre cómo crecer en tu fe" data-en="Discover how to grow in your faith">Descubre cómo crecer en tu fe</p>
+                    <a href="#" class="cta-button" data-es="Empezar" data-en="Get Started">Empezar</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2 class="section-title" data-es="Contáctanos" data-en="Contact Us">Contáctanos</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" data-es="Nombre:" data-en="Name:">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-es="Correo Electrónico:" data-en="Email:">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" data-es="Teléfono:" data-en="Phone:">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message" data-es="Mensaje:" data-en="Message:">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="cta-button" data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; MJVUSA. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+          <!--  <p data-es="Transformando vidas, una generación a la vez" data-en="Transforming lives, one generation at a time">Transformando vidas, una generación a la vez</p> -->
+        </div>
+    </footer>
+
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
