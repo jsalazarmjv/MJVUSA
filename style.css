@@ -221,23 +221,17 @@ section.hero {
 
 .campus-image {
     width: 100%;
-    height: 220px;
-    min-height: unset;
-    flex-shrink: 0;
-    /*KL object-fit: cover; DELETED*/  
-    /*display: block; DELETED */ 
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
 }
 
 .campus-info {
-    width: 100%;
     padding: 2rem;
-
-    
-    /*
-    KL
     display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;
 }
 
 .campus-info h3 {
@@ -465,13 +459,7 @@ footer {
     }
 
     .campus-card {
-       /* grid-template-columns: 1fr; */
-       /* change here KL */
-            display: flex;
-            flex-direction: column;
-            grid-template-columns: unset;
-
-    /* to here */
+        grid-template-columns: 1fr;
     }
 
     .video-container iframe {
