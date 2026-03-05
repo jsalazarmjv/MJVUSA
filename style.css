@@ -474,6 +474,7 @@ footer {
     .campus-info {
         width: 100%;
         background: white;
+        padding-top: 0rem;
     }
     .campus-info h3 {
 
