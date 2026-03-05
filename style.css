@@ -473,7 +473,18 @@ footer {
 
     .campus-info {
         width: 100%;
+        background: white;
     }
+    .campus-info h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.campus-info p {
+    margin-bottom: 0.5rem;
+    color: white;
+}
 
     .video-container iframe {
         height: 300px;
