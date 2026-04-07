@@ -129,14 +129,14 @@
                     <div class="connection-icon">❤️</div>
                     <h3 data-es="Donar" data-en="Give">Donar</h3>
                     <p data-es="Apoya el ministerio y la obra de Dios en la vida de las personas" data-en="Support God's ministry and work in the lives of people">Apoya el ministerio y la obra de Dios en la vida de las personas</p>
-                    <a href="#" class="cta-button" data-es="Donar Ahora" data-en="Give Now">Donar Ahora</a>
+                    <button class="cta-button" onclick="openModal('donateModal')" data-es="Donar Ahora" data-en="Give Now">Donar Ahora</button>
                 </article>
 
                 <article class="connection-card">
                     <div class="connection-icon">🚀</div>
                     <h3 data-es="Próximos Pasos" data-en="Next Steps">Próximos Pasos</h3>
                     <p data-es="Descubre lo siguiente que Dios tiene preparado para ti" data-en="Discover what God has in store for you next.">Descubre lo siguiente que Dios tiene preparado para ti</p>
-                    <a href="#" class="cta-button" data-es="Avanzar" data-en="Move forward">Avanzar</a>
+                    <button class="cta-button" onclick="openModal('nextStepsModal')" data-es="Empezar" data-en="Get Started">Empezar</button>
                 </article>
             </div>
         </section>
@@ -168,9 +168,91 @@
         </div>
     </footer>
 
+ <!-- Donate Modal -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('donateModal')">&times;</button>
+            <h2 data-es="Donar Ahora" data-en="Give Now">Donar Ahora</h2>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%233498db' width='400' height='300'/%3E%3Ctext x='50%25' y='40%25' text-anchor='middle' fill='white' font-size='24' font-family='Arial'%3EQR Code%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='white' font-size='18' font-family='Arial'%3EZelle / Venmo%3C/text%3E%3Ctext x='50%25' y='70%25' text-anchor='middle' fill='white' font-size='16' font-family='Arial'%3EPlaceholder Image%3C/text%3E%3C/svg%3E" alt="Donation QR Code">
+            <p data-es="Gracias por tu generosidad. Tu ofrenda ayuda a expandir el reino de Dios y bendecir a nuestra comunidad." data-en="Thank you for your generosity. Your offering helps expand God's kingdom and bless our community.">Gracias por tu generosidad. Tu ofrenda ayuda a expandir el reino de Dios y bendecir a nuestra comunidad.</p>
+            <p><strong data-es="Formas de donar:" data-en="Ways to give:">Formas de donar:</strong></p>
+            <ul>
+                <li data-es="Escanea el código QR para Zelle o Venmo" data-en="Scan the QR code for Zelle or Venmo">Escanea el código QR para Zelle o Venmo</li>
+                <li data-es="Dona en persona durante los servicios" data-en="Give in person during services">Dona en persona durante los servicios</li>
+                <li data-es="Transferencia bancaria directa" data-en="Direct bank transfer">Transferencia bancaria directa</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Next Steps Modal -->
+    <div id="nextStepsModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('nextStepsModal')">&times;</button>
+            <h2 data-es="Próximos Pasos" data-en="Next Steps">Próximos Pasos</h2>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23667eea' width='400' height='300'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' fill='white' font-size='28' font-family='Arial'%3E%F0%9F%9A%80%3C/text%3E%3Ctext x='50%25' y='65%25' text-anchor='middle' fill='white' font-size='20' font-family='Arial'%3ENext Steps%3C/text%3E%3C/svg%3E" alt="Next Steps">
+            <p data-es="¡Estamos emocionados de que quieras crecer en tu fe! Aquí hay algunas maneras de dar tus próximos pasos:" data-en="We're excited that you want to grow in your faith! Here are some ways to take your next steps:">¡Estamos emocionados de que quieras crecer en tu fe! Aquí hay algunas maneras de dar tus próximos pasos:</p>
+            <ul>
+                <li><strong data-es="Asiste a nuestros servicios" data-en="Attend our services">Asiste a nuestros servicios</strong> - <span data-es="Únete a nosotros cada domingo" data-en="Join us every Sunday">Únete a nosotros cada domingo</span></li>
+                <li><strong data-es="Únete a un grupo pequeño" data-en="Join a small group">Únete a un grupo pequeño</strong> - <span data-es="Conecta con otros creyentes" data-en="Connect with other believers">Conecta con otros creyentes</span></li>
+                <li><strong data-es="Toma la clase de nuevos miembros" data-en="Take new member class">Toma la clase de nuevos miembros</strong> - <span data-es="Aprende más sobre MJV" data-en="Learn more about MJV">Aprende más sobre MJV</span></li>
+                <li><strong data-es="Sirve en un ministerio" data-en="Serve in a ministry">Sirve en un ministerio</strong> - <span data-es="Usa tus talentos para servir" data-en="Use your talents to serve">Usa tus talentos para servir</span></li>
+                <li><strong data-es="Bautízate" data-en="Get baptized">Bautízate</strong> - <span data-es="Declara públicamente tu fe" data-en="Publicly declare your faith">Declara públicamente tu fe</span></li>
+            </ul>
+            <p data-es="¿Listo para comenzar? Contáctanos usando el formulario abajo o habla con uno de nuestros pastores después del servicio." data-en="Ready to get started? Contact us using the form below or speak with one of our pastors after service.">¿Listo para comenzar? Contáctanos usando el formulario abajo o habla con uno de nuestros pastores después del servicio.</p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+
+
+
     <!-- EmailJS Library -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
+
+    <script>
+// Modal Functions
+function openModal(modalId) {
+    document.getElementById(modalId).classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', function(e) {
+    if (e.target.classList.contains('modal')) {
+        e.target.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Scroll to Top Button
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+
 </body>
 </html>
