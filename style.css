@@ -395,6 +395,11 @@ footer {
     margin-top: 4rem;
 }
 
+.center-button {
+    text-align: center;
+    margin-top: 2rem; /* optional spacing */
+}
+
 .footer-content {
     max-width: 1400px;
     margin: 0 auto;
