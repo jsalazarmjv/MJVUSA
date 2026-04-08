@@ -141,7 +141,7 @@ main {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
 }
 
 section.hero {
@@ -589,7 +589,7 @@ footer {
 .modal-content img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0px;
     margin: 1rem 0;
 }
 
