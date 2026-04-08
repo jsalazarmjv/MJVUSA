@@ -104,12 +104,12 @@ nav {
 
 /* Hero Section */
 .hero {
-    margin-top: 70px;
+    margin-top: 30px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/HeroImage2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 600px;
+    height: 450px;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     display: flex;
