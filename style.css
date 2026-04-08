@@ -109,7 +109,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 450px;
+    height: 350px;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     display: flex;
@@ -460,7 +460,7 @@ footer {
     }
 
     .hero-content p {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -517,7 +517,7 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     .connection-grid {
