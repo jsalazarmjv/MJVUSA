@@ -1,6 +1,55 @@
-// Initialize EmailJS
-// Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
-emailjs.init("YOUR_PUBLIC_KEY");
+// ============================================
+// EmailJS Initialization
+// ============================================
+emailjs.init("XzxGxqhkX1VOoIywY");
+
+// ============================================
+// Contact Form Handler
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            
+            submitButton.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
+            submitButton.disabled = true;
+            
+            const templateParams = {
+                to_email: 'mjvlosangeles.ca@gmail.com',
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                message: document.getElementById('message').value
+            };
+            
+            emailjs.send('service_kuvjin7', 'template_foqrb3o', templateParams)
+                .then(function(response) {
+                    // Reset button FIRST
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                    
+                    // THEN show alert and clear form
+                    alert(currentLang === 'es' ? 
+                        '¡Mensaje enviado con éxito! Nos pondremos en contacto muy pronto.' : 
+                        'Message sent successfully! We will contact you very soon.');
+                    contactForm.reset();
+                }, function(error) {
+                    // Reset button on error too
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                    
+                    alert(currentLang === 'es' ? 
+                        'Error al enviar el mensaje. Por favor intente de nuevo.' : 
+                        'Error sending message. Please try again.');
+                    console.error('EmailJS error:', error);
+                });
+        });
+    }
+});
 
 // Current language state
 let currentLang = 'es';
@@ -69,7 +118,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const originalText = submitButton.textContent;
     
     // Show loading state
-    submitButton.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
+    submitButton.textContent = currentLang === 'es' ? 'Enviado' : 'Sent';
     submitButton.disabled = true;
 
     // Prepare template parameters
