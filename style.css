@@ -178,8 +178,10 @@ section.hero {
 
 .pastor-image {
     width: 100%;
-    height: 350px;
-    object-fit: cover;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    object-position: center;
     display: block;
 }
 

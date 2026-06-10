@@ -4,7 +4,17 @@ emailjs.init("YOUR_PUBLIC_KEY");
 
 // Current language state
 let currentLang = 'es';
-
+if (localStorage.getItem('mjvLanguage')) {
+    currentLang = localStorage.getItem('mjvLanguage');
+    // Apply the saved language on page load
+    const elements = document.querySelectorAll('[data-es][data-en]');
+    elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+    });
+    document.documentElement.lang = currentLang;
+} else {
+    currentLang = 'es'; // Default to Spanish if no preference saved
+}
 /**
  * Toggle between Spanish and English
  */
@@ -16,8 +26,10 @@ function toggleLanguage() {
         el.textContent = el.getAttribute(`data-${currentLang}`);
     });
 
-    // Update HTML lang attribute for accessibility
     document.documentElement.lang = currentLang;
+    
+    // ADD THIS LINE - Save language preference
+    localStorage.setItem('mjvLanguage', currentLang);
 }
 
 /**
@@ -27,6 +39,16 @@ function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
     navLinks.classList.toggle('active');
 }
+
+document.addEventListener('click', function(e) {
+    const navLinks = document.getElementById('navLinks');
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+    // If click is NOT on the menu or toggle button
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+        navLinks.classList.remove('active');
+    }
+});
 
 /**
  * Close mobile menu when clicking on a navigation link
