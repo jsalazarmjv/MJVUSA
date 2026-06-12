@@ -135,8 +135,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             alert(currentLang === 'es' ? 
-                '¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.' : 
-                'Message sent successfully! We will contact you soon.');
+                '¡Mensaje enviado con éxito!' : 
+                'Message sent successfully!');
             
             // Reset form
             document.getElementById('contactForm').reset();
